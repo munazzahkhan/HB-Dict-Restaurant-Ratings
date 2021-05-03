@@ -13,4 +13,9 @@ def restaurant_ratings(file_name):
     return rest_ratings
 
 
-print(restaurant_ratings("scores.txt"))
+
+rest_ratings = restaurant_ratings("scores.txt")
+
+for restaurant, rating in sorted(rest_ratings.items()):
+    print(f"{restaurant} is rated at {rating}.")
+    
